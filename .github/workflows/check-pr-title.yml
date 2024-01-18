@@ -1,7 +1,7 @@
 name: GitHub Actions - Check PR Title
 on:
   pull_request:
-    types: [ opened, reopened, edited, synchronize ]
+    types: [opened, reopened, edited, synchronize]
 jobs:
   Jira-PR-Title:
     if: ${{ (github.actor != 'dependabot[bot]') && (github.actor != 'EburyCrowdin') }}
